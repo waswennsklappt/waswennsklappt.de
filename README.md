@@ -1,9 +1,9 @@
 # waswennsklappt.de
-Website about [waswennsklappt.de](waswennsklappt.de)
+Website about [waswennsklappt.de](https://waswennsklappt.de)
 
 Welcome to waswennsklappt.de! This is a website about a landing page to redirect to two awesome projects.
- - [podcast.waswennsklappt.de](podcast.waswennsklappt.de) (Podcast in German with my girlfriend)
- - [projekt.waswennsklappt.de](projekt.waswennsklappt.de) (Project of my girlfriend helping her clients to kickstart their business)
+ - [podcast.waswennsklappt.de](https://podcast.waswennsklappt.de) (Podcast in German with my girlfriend)
+ - [projekt.waswennsklappt.de](https://projekt.waswennsklappt.de) (Project of my girlfriend helping her clients to kickstart their business)
 
 ## Getting Started
 
