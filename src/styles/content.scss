@@ -1,0 +1,44 @@
+.content {
+  h1 {
+    @apply font-body font-bold leading-none;
+    margin-bottom: 1em;
+
+    font-size: min(max(3rem, 6.25vw), 7rem);
+
+    @supports (font-size: clamp(3rem, 6.25vw, 7rem)) {
+      font-size: clamp(3rem, 6.25vw, 7rem);
+    }
+  }
+
+  h2 {
+    @apply text-2xl font-bold leading-none mb-4 mt-4;
+  }
+
+  h3 {
+    @apply text-xl font-bold leading-none py-6;
+  }
+
+  h4 {
+    @apply font-bold uppercase tracking-widest leading-none py-6;
+  }
+
+  >p {
+    @apply text-lg leading-relaxed;
+  }
+
+  >img {
+    @apply my-12;
+  }
+
+  a {
+    @apply font-bold text-pink;
+
+    &:hover {
+      @apply text-black;
+    }
+  }
+}
+
+.content section>*:first-child {
+  @apply mt-0 pt-0;
+}

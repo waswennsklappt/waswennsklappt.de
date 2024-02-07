@@ -1,0 +1,31 @@
+---
+export interface Props {
+  url: string;
+  picture: string;
+  name: string;
+  accentColor: string;
+}
+
+const { url, picture, name, accentColor = "bg-white" } = Astro.props;
+---
+
+<a
+  href={url}
+  class="transition-all duration-700 ease-in-out block relative top-0 hover:-top-5 shadow-lg hover:shadow-2xl bg-white rounded-xl overflow-hidden"
+>
+  <div class={`py-6 px-8 ${accentColor}`}>
+    <h2 class="font-bold text-lg sm:text-2xl leading-tight text-center">
+      {name}
+    </h2>
+  </div>
+  <div class="w-full border-b-2 border-white sluggy"></div>
+  <img class="" src={picture} alt="bild" width="800" height="708" />
+</a>
+
+<style>
+  img {
+    width: 100%;
+    aspect-ratio: 308/300;
+    object-fit: cover;
+  }
+</style>

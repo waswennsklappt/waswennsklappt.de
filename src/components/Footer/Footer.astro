@@ -1,0 +1,20 @@
+---
+import Social from "./Social.astro";
+import Sluggy from "./Sluggy.astro";
+---
+
+<footer class="bg-accent py-6 lg:py-12 text-center shadow-2xl">
+  <div class="text-sm" data-test="footer-text">
+    &copy;<script type="text/javascript">
+      document.write(new Date().getFullYear());
+    </script>
+    Was wenn's klappt
+  </div>
+  <Social />
+  <div>
+    <a href="/impressum" class="font-bold hover:text-hot-pink">Impressum</a>
+    <a href="/datenschutz" class="font-bold hover:text-hot-pink">Datenschutz</a>
+  </div>
+</footer>
+
+<Sluggy />

@@ -1,0 +1,61 @@
+---
+import DefaultHead from "../components/Head/DefaultHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer/Footer.astro";
+
+let title = "Impressum | Was wenn's klappt";
+let description = "";
+---
+
+<html lang="de">
+  <head>
+    <DefaultHead title={title} description={description} />
+  </head>
+
+  <body class="bg-white text-black font-body leading-normal">
+    <Navbar />
+
+    <main class="py-12 lg:py-20 px-5">
+      <section class="mx-auto max-w-3xl text-left content">
+        <h1 class="mb-4">Impressum</h1>
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <div class="font-subtext mt-10 mb-10">
+          <h3>Dieses Impressum gilt für folgende Seiten:</h3>
+          <ul>
+            <li>www.waswennsklappt.de</li>
+            <li>www.isabelle-moegelin.de</li>
+            <li>podcast.waswennsklappt.de</li>
+            <li>projekt.waswennsklappt.de</li>
+          </ul>
+        </div>
+        <div class="font-subtext text-xl">
+          <p class="mb-6">Isabelle Moegelin</p>
+          <p>c/o Grosch Postflex #1972</p>
+          <p>Emsdettener Str. 10</p>
+          <p>48268 Greven</p>
+          <p class="mt-4 mb-4 font-bold">
+            Keine Pakete oder Päckchen – Annahme wird verweigert!
+          </p>
+          <p class="mt-4 mb-4 font-thin">E-Mail: hallo@waswennsklappt.de</p>
+          <p class="mt-4 mb-4 font-thin">
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+            DE318348007
+          </p>
+          <p class="mt-4 mb-4 font-thin">
+            Plattform der EU-Kommission zur Online-Streitbeilegung:
+            https://ec.europa.eu/odr
+          </p>
+          <p class="mt-4 mb-4 font-thin">
+            Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+          </p>
+          <p class="mt-4 font-thin">
+            Verantwortliche/r i.S.d. § 18 Abs. 2 MStV:
+          </p>
+          <p class="font-thin">Isabelle Moegelin</p>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

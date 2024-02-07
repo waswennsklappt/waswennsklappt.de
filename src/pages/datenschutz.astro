@@ -1,0 +1,28 @@
+---
+import DefaultHead from "../components/Head/DefaultHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer/Footer.astro";
+
+let title = "Datenschutz | Was wenn's klappt";
+let description = "";
+---
+
+<html lang="de">
+  <head>
+    <DefaultHead title={title} description={description} />
+  </head>
+
+  <body class="bg-white text-black font-body leading-normal">
+    <Navbar />
+
+    <main class="py-12 lg:py-20">
+      <section class="max-w-6xl mx-auto px-3">
+        <header class="mx-auto max-w-3xl text-left content">
+          <h2 class="mb-4">Datenschutz</h2>
+          <p>Hier sind einige Datenschutz Dinge <br /> tbd</p>
+        </header>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

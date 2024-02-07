@@ -1,0 +1,114 @@
+---
+import DefaultHead from "../components/Head/DefaultHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Intro from "../components/Intro.astro";
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer/Footer.astro";
+import Arrows from "../components/Arrows.astro";
+
+const title = "Was wenn's klappt?";
+const intro = "Willkommen im Was wenn's klappt Universum";
+const question = "Wo möchtest du hin?";
+const seoDescription =
+  "Was wenn's klappt? Business Membership und Was wenn's klappt? Podcast";
+---
+
+<html lang="de">
+  <head>
+    <DefaultHead title={title} description={seoDescription} />
+  </head>
+
+  <body
+    class="bg-accent text-black font-body leading-normal modify-touch"
+  >
+    <Navbar />
+    <main
+      class="py-12 lg:py-12 px-24 max-w-7xl mx-auto w-full max-sm:px-5 items-center"
+    >
+      <section class="mx-auto px-6">
+        <Intro title={intro} />
+
+        <div class="flex items-center content text-center justify-center">
+          <button
+            data-confetti-button
+            type="button"
+            class="confetti inline-block w-[200px] h-[50px] relative overflow-hidden [transition:all_0.5s_ease-in] rounded-xl"
+          >
+            <span class="text-xl font-subtext mx-auto max-w-xl text-center"
+              >{question}</span
+            >
+          </button>
+        </div>
+        <Arrows />
+        <section
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-10"
+        >
+          <div class="size-3/4 place-self-center">
+            <Card
+              accentColor="bg-accentPodcast"
+              url="https://podcast.waswennsklappt.de"
+              picture="/images/podcast.png"
+              name="Podcast"
+            />
+          </div>
+          <div class="size-3/4 place-self-center">
+            <Card
+              accentColor="bg-accentMembership"
+              url="https://projekt.waswennsklappt.de"
+              picture="/images/isabelle.png"
+              name="Business Community"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <Footer />
+    <style>
+      /* From uiverse.io by @Ali-Tahmazi99 */
+      button::before,
+      button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 100%;
+        transform: skew(15deg);
+        transition: all 0.5s;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      button::before {
+        left: -10px;
+        background: #acc4b8;
+      }
+
+      button::after {
+        right: -10px;
+        background: #f4c07f;
+      }
+
+      button:hover::before,
+      button:hover::after {
+        width: 58%;
+      }
+
+      button:hover span {
+        transition: 0.3s;
+      }
+    </style>
+
+    <script>
+      // Import npm modules.
+      import confetti from "canvas-confetti";
+
+      // Find our component DOM on the page.
+      const buttons = document.querySelectorAll("[data-confetti-button]");
+
+      // Add event listeners to fire confetti when a button is clicked.
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => confetti());
+      });
+    </script>
+  </body>
+</html>
