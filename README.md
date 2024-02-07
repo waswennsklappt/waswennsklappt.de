@@ -22,6 +22,9 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 2. Navigate to the project directory
    `cd waswennsklappt.de`
 3. Install dependencies
+      ```sh
+      npm install
+      ```
 
 ### Development
 To start a development server and view the project in your browser:
