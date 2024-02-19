@@ -16,7 +16,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.2",
+    "@astrojs/check": "^0.5.4",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/grandstander": "^5.0.19",
     "@fontsource/league-spartan": "^5.0.18",
